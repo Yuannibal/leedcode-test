@@ -1,6 +1,9 @@
 package com.yzh.questions.hashUse;
 
+
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -14,11 +17,27 @@ import java.util.Set;
  */
 public class IsValidSudoku {
 
-    /**
-     * 方法一:HashSet
-     */
-    public boolean isValidSudoku1(char[][] board) {
-        Set<Integer> set = new HashSet<>();
+    public boolean isValidSudoku(char[][] board) {
+        List<Set<Integer>> rows = new ArrayList<>();     // 行
+        List<Set<Integer>> columns = new ArrayList<>();  // 列
+        List<Set<Integer>> boxes = new ArrayList<>();    // 九宫格(从左向右排)
+        for (int i = 0; i < 9; i++) {
+            rows.add(new HashSet<>());
+            columns.add(new HashSet<>());
+            boxes.add(new HashSet<>());
+        }
+
+        for (int row = 0; row < board.length; row++) {
+            for (int column = 0; column < board[0].length; column++) {
+                if ((board[column][row] != '.')) {
+                    if (!(rows.get(row).add((board[column][row]) - '0'))
+                            || !(columns.get(column).add((board[column][row]) - '0'))
+                            || !(boxes.get(((row / 3) * 3) + (column / 3)).add((board[column][row]) - '0'))) {
+                        return false;
+                    }
+                }
+            }
+        }
         return true;
     }
 }
