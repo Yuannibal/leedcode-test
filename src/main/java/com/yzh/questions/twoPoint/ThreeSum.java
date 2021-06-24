@@ -23,7 +23,7 @@ public class ThreeSum {
         }
 
         Arrays.sort(nums);
-        for (int i = 0; i < nums.length - 1; i++) {
+        for (int i = 0; i < nums.length - 2; i++) {
             // 需要和上一次枚举的数不相同
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
