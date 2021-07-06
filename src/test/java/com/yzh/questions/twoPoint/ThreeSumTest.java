@@ -1,6 +1,5 @@
 package com.yzh.questions.twoPoint;
 
-import java.util.Arrays;
 import java.util.List;
 import org.junit.Test;
 
@@ -16,35 +15,35 @@ public class ThreeSumTest {
     public void test_1() {
         int[] nums = {-1, 0, 1, 2, -1, -4};
         List<List<Integer>> result = new ThreeSum().threeSum(nums);
-        (new ThreeSum().threeSum(nums)).forEach(list -> System.out.println(Arrays.toString(list.toArray())));
+        (new ThreeSum().threeSum(nums)).forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
 
     @Test
     public void test_2() {
         int[] nums = {};
-        (new ThreeSum().threeSum(nums)).forEach(list -> System.out.println(Arrays.toString(list.toArray())));
+        (new ThreeSum().threeSum(nums)).forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
 
     @Test
     public void test_3() {
         int[] nums = {0};
-        (new ThreeSum().threeSum(nums)).forEach(list -> System.out.println(Arrays.toString(list.toArray())));
+        (new ThreeSum().threeSum(nums)).forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
 
     @Test
     public void test_4() {
         int[] nums = {0, 0, 0, 0};
-        (new ThreeSum().threeSum(nums)).forEach(list -> System.out.println(Arrays.toString(list.toArray())));
+        (new ThreeSum().threeSum(nums)).forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
 
     @Test
     public void test_5() {
         int[] nums = {-2, 0, 0, 2, 2};
-        (new ThreeSum().threeSum(nums)).forEach(list -> System.out.println(Arrays.toString(list.toArray())));
+        (new ThreeSum().threeSum(nums)).forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
 }
