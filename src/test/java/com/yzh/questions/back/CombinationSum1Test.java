@@ -15,21 +15,41 @@ import org.junit.Test;
 public class CombinationSum1Test {
 
     @Test
-    public void test_1() {
+    public void test_11() {
         int[] candidates = {2, 3, 6, 7};
         int target = 7;
 
-        List<List<Integer>> result = new CombinationSum1().combinationSum(candidates, target);
+        List<List<Integer>> result = new CombinationSum1().combinationSum1(candidates, target);
         result.forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
 
     @Test
-    public void test_2() {
+    public void test_12() {
         int[] candidates = {2, 3, 5};
         int target = 8;
 
-        List<List<Integer>> result = new CombinationSum1().combinationSum(candidates, target);
+        List<List<Integer>> result = new CombinationSum1().combinationSum1(candidates, target);
+        result.forEach(list -> System.out.println(list.toString()));
+        System.out.println();
+    }
+
+    @Test
+    public void test_21() {
+        int[] candidates = {2, 3, 6, 7};
+        int target = 7;
+
+        List<List<Integer>> result = new CombinationSum1().combinationSum2(candidates, target);
+        result.forEach(list -> System.out.println(list.toString()));
+        System.out.println();
+    }
+
+    @Test
+    public void test_22() {
+        int[] candidates = {2, 3, 5};
+        int target = 8;
+
+        List<List<Integer>> result = new CombinationSum1().combinationSum2(candidates, target);
         result.forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }

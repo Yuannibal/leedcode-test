@@ -1,6 +1,8 @@
 package com.yzh.questions.back;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 /**
@@ -15,34 +17,59 @@ import java.util.List;
 public class CombinationSum1 {
 
     /**
-     * 方法一. 递归
+     * 方法一. 双层递归
      */
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+    public List<List<Integer>> combinationSum1(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
-        List<Integer> list = new ArrayList<>();
-        combinationSum(candidates, target, result, list, 0);
+        Deque<Integer> deque = new ArrayDeque<>();
+        combinationSum1(candidates, target, result, deque, 0);
         return result;
     }
-
-    private void combinationSum(int[] candidates, int target,
-            List<List<Integer>> result, List<Integer> list, int index) {
+    private void combinationSum1(int[] candidates, int target,
+            List<List<Integer>> result, Deque<Integer> deque, int index) {
         if (index == candidates.length) {
             return;
         }
 
         if (target == 0) {
-            result.add(new ArrayList<>(list));
+            result.add(new ArrayList<>(deque));
             return;
         }
 
         // 当前数递归（内层）
         if (target - candidates[index] >= 0) {
-            list.add(candidates[index]);
-            combinationSum(candidates, target - candidates[index], result, list, index);
-            list.remove(list.size() - 1);
+            deque.addLast(candidates[index]);
+            combinationSum1(candidates, target - candidates[index], result, deque, index);
+            deque.removeLast();
         }
 
         // 数组递归（外层）
-        combinationSum(candidates, target, result, list, index + 1);
+        combinationSum1(candidates, target, result, deque, index + 1);
     }
+
+    /**
+     * 方法二. 循环 + 递归
+     */
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        List<List<Integer>> result = new ArrayList<>();
+        Deque<Integer> deque = new ArrayDeque<>();
+        combinationSum2(candidates, target, result, deque, 0);
+        return result;
+    }
+    private void combinationSum2(int[] candidates, int target,
+            List<List<Integer>> result, Deque<Integer> deque, int index) {
+        if (target == 0) {
+            result.add(new ArrayList<>(deque));
+            return;
+        }
+
+        for (int i = index; i < candidates.length; i++) {
+            if (target >= candidates[i]) {
+                deque.addLast(candidates[i]);
+                combinationSum2(candidates, target - candidates[i], result, deque, i);
+                deque.removeLast();
+            }
+        }
+    }
+
 }
