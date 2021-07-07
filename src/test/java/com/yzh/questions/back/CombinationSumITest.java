@@ -12,14 +12,14 @@ import org.junit.Test;
  * (1)所有数字（包括 target）都是正整数
  * (2)解集不能包含重复的组合。
  */
-public class CombinationSum1Test {
+public class CombinationSumITest {
 
     @Test
     public void test_11() {
         int[] candidates = {2, 3, 6, 7};
         int target = 7;
 
-        List<List<Integer>> result = new CombinationSum1().combinationSum1(candidates, target);
+        List<List<Integer>> result = new CombinationSumI().combinationSum1(candidates, target);
         result.forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
@@ -29,7 +29,7 @@ public class CombinationSum1Test {
         int[] candidates = {2, 3, 5};
         int target = 8;
 
-        List<List<Integer>> result = new CombinationSum1().combinationSum1(candidates, target);
+        List<List<Integer>> result = new CombinationSumI().combinationSum1(candidates, target);
         result.forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
@@ -39,7 +39,7 @@ public class CombinationSum1Test {
         int[] candidates = {2, 3, 6, 7};
         int target = 7;
 
-        List<List<Integer>> result = new CombinationSum1().combinationSum2(candidates, target);
+        List<List<Integer>> result = new CombinationSumI().combinationSum2(candidates, target);
         result.forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
@@ -49,7 +49,7 @@ public class CombinationSum1Test {
         int[] candidates = {2, 3, 5};
         int target = 8;
 
-        List<List<Integer>> result = new CombinationSum1().combinationSum2(candidates, target);
+        List<List<Integer>> result = new CombinationSumI().combinationSum2(candidates, target);
         result.forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }

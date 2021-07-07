@@ -9,14 +9,14 @@ import org.junit.Test;
  * candidates 中的每个数字在每个组合中只能使用一次。
  * 注意：解集不能包含重复的组合。
  */
-public class CombinationSum2Test {
+public class CombinationSumIITest {
 
     @Test
     public void test_1() {
         int[] candidates = {10, 1, 2, 7, 6, 1, 5};
         int target = 8;
 
-        List<List<Integer>> result = new CombinationSum2().combinationSum(candidates, target);
+        List<List<Integer>> result = new CombinationSumII().combinationSum(candidates, target);
         result.forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
@@ -26,7 +26,7 @@ public class CombinationSum2Test {
         int[] candidates = {2, 5, 2, 1, 2};
         int target = 5;
 
-        List<List<Integer>> result = new CombinationSum2().combinationSum(candidates, target);
+        List<List<Integer>> result = new CombinationSumII().combinationSum(candidates, target);
         result.forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }

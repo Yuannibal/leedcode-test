@@ -14,7 +14,7 @@ import java.util.List;
  * (1)所有数字（包括 target）都是正整数
  * (2)解集不能包含重复的组合。
  */
-public class CombinationSum1 {
+public class CombinationSumI {
 
     /**
      * 方法一. 双层递归

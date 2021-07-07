@@ -12,14 +12,16 @@ import java.util.List;
  * candidates 中的每个数字在每个组合中只能使用一次。
  * 注意：解集不能包含重复的组合。
  */
-public class CombinationSum2 {
+public class CombinationSumII {
 
+    /**
+     * 方法二. 循环 + 递归
+     */
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         Arrays.sort(candidates);    // 排序
 
         List<List<Integer>> result = new ArrayList<>();
         Deque<Integer> deque = new ArrayDeque<>();
-
         combinationSum(candidates, target, result, deque, 0);
         return result;
     }
