@@ -12,24 +12,24 @@ import org.junit.Test;
  * (1)所有数字（包括 target）都是正整数
  * (2)解集不能包含重复的组合。
  */
-public class CombinationSumTest {
+public class CombinationSum1Test {
 
     @Test
-    public void test_11() {
+    public void test_1() {
         int[] candidates = {2, 3, 6, 7};
         int target = 7;
 
-        List<List<Integer>> result = new CombinationSum().combinationSum(candidates, target);
+        List<List<Integer>> result = new CombinationSum1().combinationSum(candidates, target);
         result.forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
 
     @Test
-    public void test_12() {
+    public void test_2() {
         int[] candidates = {2, 3, 5};
         int target = 8;
 
-        List<List<Integer>> result = new CombinationSum().combinationSum(candidates, target);
+        List<List<Integer>> result = new CombinationSum1().combinationSum(candidates, target);
         result.forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }

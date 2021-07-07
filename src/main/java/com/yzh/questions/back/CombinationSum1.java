@@ -12,7 +12,7 @@ import java.util.List;
  * (1)所有数字（包括 target）都是正整数
  * (2)解集不能包含重复的组合。
  */
-public class CombinationSum {
+public class CombinationSum1 {
 
     /**
      * 方法一. 递归
@@ -26,7 +26,6 @@ public class CombinationSum {
 
     private void combinationSum(int[] candidates, int target,
             List<List<Integer>> result, List<Integer> list, int index) {
-
         if (index == candidates.length) {
             return;
         }
