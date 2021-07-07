@@ -15,30 +15,22 @@ import org.junit.Test;
 public class CombinationSumTest {
 
     @Test
-    public void test_1() {
+    public void test_11() {
         int[] candidates = {2, 3, 6, 7};
         int target = 7;
 
-        List<List<Integer>> result = new CombinationSum().combinationSum1(candidates, target);
-        result.stream().forEach(
-                list -> {
-                    System.out.println(list.toString());
-                }
-        );
+        List<List<Integer>> result = new CombinationSum().combinationSum(candidates, target);
+        result.forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
 
     @Test
-    public void test_2() {
+    public void test_12() {
         int[] candidates = {2, 3, 5};
         int target = 8;
 
-        List<List<Integer>> result = new CombinationSum().combinationSum1(candidates, target);
-        result.stream().forEach(
-                list -> {
-                    System.out.println(list.toString());
-                }
-        );
+        List<List<Integer>> result = new CombinationSum().combinationSum(candidates, target);
+        result.forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
 }

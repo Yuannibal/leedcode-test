@@ -17,13 +17,14 @@ public class CombinationSum {
     /**
      * 方法一. 递归
      */
-    public List<List<Integer>> combinationSum1(int[] candidates, int target) {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> list = new ArrayList<>();
-        combinationSum1(candidates, target, result, list, 0);
+        combinationSum(candidates, target, result, list, 0);
         return result;
     }
-    private void combinationSum1(int[] candidates, int target,
+
+    private void combinationSum(int[] candidates, int target,
             List<List<Integer>> result, List<Integer> list, int index) {
 
         if (index == candidates.length) {
@@ -35,14 +36,14 @@ public class CombinationSum {
             return;
         }
 
-        // 内层递归
+        // 当前数递归（内层）
         if (target - candidates[index] >= 0) {
             list.add(candidates[index]);
-            combinationSum1(candidates, target - candidates[index], result, list, index);
+            combinationSum(candidates, target - candidates[index], result, list, index);
             list.remove(list.size() - 1);
         }
 
-        // 外层递归
-        combinationSum1(candidates, target, result, list, index + 1);
+        // 数组递归（外层）
+        combinationSum(candidates, target, result, list, index + 1);
     }
 }
