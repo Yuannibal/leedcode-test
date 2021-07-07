@@ -63,12 +63,10 @@ public class CombinationSumI {
             return;
         }
 
-        for (int i = index; i < candidates.length; i++) {
-            if (target >= candidates[i]) {
-                deque.addLast(candidates[i]);
-                combinationSum2(candidates, target - candidates[i], result, deque, i);
-                deque.removeLast();
-            }
+        for (int i = index; i < candidates.length && target >= candidates[i]; i++) {
+            deque.addLast(candidates[i]);
+            combinationSum2(candidates, target - candidates[i], result, deque, i);
+            deque.removeLast();
         }
     }
 

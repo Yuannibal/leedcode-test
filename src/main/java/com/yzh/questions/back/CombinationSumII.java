@@ -37,6 +37,7 @@ public class CombinationSumII {
             if (i > index && candidates[i] == candidates[i - 1]) {
                 continue;
             }
+
             deque.addLast(candidates[i]);
             combinationSum(candidates, target - candidates[i], result, deque, i + 1);
             deque.removeLast();
