@@ -1,4 +1,4 @@
-package com.yzh.questions.numUse;
+package com.yzh.questions.arrayUse;
 
 import java.util.ArrayList;
 import java.util.List;

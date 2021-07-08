@@ -1,4 +1,4 @@
-package com.yzh.questions.numUse;
+package com.yzh.questions.arrayUse;
 
 import org.junit.Assert;
 import org.junit.Test;
