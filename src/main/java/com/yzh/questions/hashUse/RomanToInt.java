@@ -22,6 +22,7 @@ public class RomanToInt {
             put("D", 500);
             put("M", 1000);
 
+            // 特殊情况
             put("IV", 4);
             put("IX", 9);
             put("XL", 40);
