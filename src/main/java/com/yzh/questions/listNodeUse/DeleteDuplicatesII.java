@@ -16,6 +16,28 @@ public class DeleteDuplicatesII {
         ListNode pre = new ListNode(0);
         pre.next = head;
 
+        ListNode first = pre;
+        ListNode second = head;
+        ListNode third = head.next;
+        while (third != null) {
+            if (second.val != third.val) {
+                first = first.next;
+                second = second.next;
+                third = third.next;
+            } else { // second.val == third.val
+                while (third != null && second.val == third.val) {
+                    third = third.next;
+                }
+                first.next = third;
+                second = third;
+
+                if (third == null) {
+                    break;
+                } else {
+                    third = third.next;
+                }
+            }
+        }
         return pre.next;
     }
 }

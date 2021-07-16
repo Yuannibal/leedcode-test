@@ -15,4 +15,10 @@ public class DeleteDuplicatesIITest {
         ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3, new ListNode(4, new ListNode(4, new ListNode(5)))))));
         ListNodeUtils.print((new DeleteDuplicatesII()).deleteDuplicates(head));
     }
+
+    @Test
+    public void test_2() {
+        ListNode head = new ListNode(1, new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3)))));
+        ListNodeUtils.print((new DeleteDuplicatesII()).deleteDuplicates(head));
+    }
 }
