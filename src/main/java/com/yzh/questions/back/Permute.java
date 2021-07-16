@@ -43,7 +43,9 @@ public class Permute {
         }
     }
 
-
+    /**
+     * 回溯 + 链表交换
+     */
     public List<List<Integer>> permute2(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
 
