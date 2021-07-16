@@ -1,6 +1,7 @@
 package com.yzh.questions.back;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -16,7 +17,7 @@ public class Permute {
     /**
      * 回溯 + 栈 + 队列(保证顺序递进，但遍历一遍后不变)
      */
-    public List<List<Integer>> permute(int[] nums) {
+    public List<List<Integer>> permute1(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
 
         Queue<Integer> output = new LinkedList<>();
@@ -24,11 +25,11 @@ public class Permute {
             output.add(num);
         }
 
-        permute(result, output, new Stack<>(), output.size(), 0);
+        permute1(result, output, new Stack<>(), output.size(), 0);
         return result;
     }
 
-    private void permute(List<List<Integer>> result, Queue<Integer> output, Stack<Integer> input, int len, int n) {
+    private void permute1(List<List<Integer>> result, Queue<Integer> output, Stack<Integer> input, int len, int n) {
         if (n == len) {
             result.add(new ArrayList<>(input));
         }
@@ -36,9 +37,33 @@ public class Permute {
         for (int i = n; i < len; i++) {
             int num = output.remove();  // 队列是头出尾进
             input.push(num);     // 栈是投进头出
-            permute(result, output, input, len, n + 1);
+            permute1(result, output, input, len, n + 1);
             input.pop();         // 栈是投进头出
             output.offer(num);         // 队列是头出尾进
+        }
+    }
+
+
+    public List<List<Integer>> permute2(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+
+        List<Integer> output = new LinkedList<>();
+        for (int num : nums) {
+            output.add(num);
+        }
+
+        permute2(result, output, output.size(), 0);
+        return result;
+    }
+    private void permute2(List<List<Integer>> result, List<Integer> output, int len, int n) {
+        if (n == len) {
+            result.add(new ArrayList<>(output));
+        }
+
+        for (int i = n; i < len; i++) {
+            Collections.swap(output, n, i);            // 交换两个元素的位置
+            permute2(result, output, len, n + 1);
+            Collections.swap(output, n, i);            // 恢复回来
         }
     }
 }

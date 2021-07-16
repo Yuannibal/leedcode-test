@@ -13,7 +13,15 @@ public class PermuteTest {
     @Test
     public void test_1() {
         int[] nums = {1, 2, 3};
-        List<List<Integer>> result = new Permute().permute(nums);
+        List<List<Integer>> result = new Permute().permute1(nums);
+        result.forEach(list -> System.out.println(list.toString()));
+        System.out.println();
+    }
+
+    @Test
+    public void test_2() {
+        int[] nums = {1, 2, 3};
+        List<List<Integer>> result = new Permute().permute2(nums);
         result.forEach(list -> System.out.println(list.toString()));
         System.out.println();
     }
