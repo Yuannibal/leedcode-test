@@ -12,14 +12,14 @@ public class GenerateMatrixTest {
     @Test
     public void test_1() {
         int n = 3;
-        int result[][] = {{1, 2, 3}, {8, 9, 4}, {7, 6, 5}};
+        int[][] result = {{1, 2, 3}, {8, 9, 4}, {7, 6, 5}};
         Assert.assertArrayEquals(result, new GenerateMatrix().generateMatrix(n));
     }
 
     @Test
     public void test_2() {
         int n = 1;
-        int result[][] = {{1}};
+        int[][] result = {{1}};
         Assert.assertArrayEquals(result, new GenerateMatrix().generateMatrix(n));
     }
 }
