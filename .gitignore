@@ -2,16 +2,8 @@
 ### Java template
 # Compiled class file
 *.class
-
 # Log file
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
 # Package Files #
 *.jar
 *.war
@@ -21,17 +13,7 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-.idea/.gitignore
-.idea/checkstyle-idea.xml
-.idea/codeStyles/
-.idea/compiler.xml
-.idea/encodings.xml
-.idea/jarRepositories.xml
-.idea/misc.xml
-.idea/uiDesigner.xml
-leetcode-test.iml
-.idea/vcs.xml
+# target文件
 target/
+# idea文件
+.idea/
