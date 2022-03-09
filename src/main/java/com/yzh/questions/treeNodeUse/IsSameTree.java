@@ -17,7 +17,6 @@ public class IsSameTree {
      *
      * 空间复杂度：O(min(m,n))，其中 m 和 n 分别是两个二叉树的节点数。
      * 空间复杂度取决于递归调用的层数，递归调用的层数不会超过较小的二叉树的最大高度，最坏情况下，二叉树的高度等于节点数。
-     *
      */
     public boolean isSameTree(TreeNode p, TreeNode q) {
         // 都null

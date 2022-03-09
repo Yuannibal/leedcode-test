@@ -11,7 +11,6 @@ public class IsPalindrome {
 
     /**
      * 方法一:栈
-     *
      */
     public boolean isPalindrome(ListNode head) {
         Stack<Integer> stack = new Stack<>();

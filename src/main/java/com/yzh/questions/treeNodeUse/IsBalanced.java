@@ -19,7 +19,6 @@ public class IsBalanced {
      *
      *
      * 空间复杂度：O(n)，其中 nn 是二叉树中的节点个数。空间复杂度主要取决于递归调用的层数，递归调用的层数不会超过 n。
-     *
      */
     public boolean isBalanced1(TreeNode root) {
         if (root == null) {
@@ -37,7 +36,6 @@ public class IsBalanced {
             return Math.max(maxDepth1(root.left), maxDepth1(root.right)) + 1;
         }
     }
-
 
     /**
      * 方法二：自底向上的递归

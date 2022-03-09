@@ -40,7 +40,6 @@ public class LowestCommonAncestorTest {
                 new TreeNode(8, new TreeNode(7), new TreeNode(9))
         );
 
-
         root.left = p;
         root.right = q;
 

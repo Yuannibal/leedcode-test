@@ -40,7 +40,7 @@ public class TwoSumTest {
 
     @Test
     public void test_4() {
-        int[] numbers = {5,25,75};
+        int[] numbers = {5, 25, 75};
         int target = 100;
         Assert.assertArrayEquals(new int[]{2, 3}, (new TwoSum()).twoSum1(numbers, target));
         Assert.assertArrayEquals(new int[]{2, 3}, (new TwoSum()).twoSum2(numbers, target));

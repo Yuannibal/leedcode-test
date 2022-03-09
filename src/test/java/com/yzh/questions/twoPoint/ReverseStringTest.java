@@ -21,8 +21,8 @@ public class ReverseStringTest {
 
     @Test
     public void test_2() {
-        char[] s = {'H','a','n','n','a','h'};
+        char[] s = {'H', 'a', 'n', 'n', 'a', 'h'};
         (new ReverseString()).reverseString(s);
-        Assert.assertArrayEquals(new char[]{'h','a','n','n','a','H'}, s);
+        Assert.assertArrayEquals(new char[]{'h', 'a', 'n', 'n', 'a', 'H'}, s);
     }
 }

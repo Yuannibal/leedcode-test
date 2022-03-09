@@ -12,17 +12,17 @@ public interface MinStack {
     void push(int val);
 
     /**
-     *  删除栈顶的元素
+     * 删除栈顶的元素
      */
     void pop();
 
     /**
-     *  获取栈顶元素
+     * 获取栈顶元素
      */
     int top();
 
     /**
-     *  检索栈中的最小元素
+     * 检索栈中的最小元素
      */
     int getMin();
 }

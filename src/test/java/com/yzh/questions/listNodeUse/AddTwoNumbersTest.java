@@ -28,7 +28,8 @@ public class AddTwoNumbersTest {
 
     @Test
     public void test_3() {
-        ListNode l1 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
+        ListNode l1 = new ListNode(9,
+                new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
         ListNode l2 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));
         ListNodeUtils.print((new AddTwoNumbers()).addTwoNumbers(l1, l2));
     }

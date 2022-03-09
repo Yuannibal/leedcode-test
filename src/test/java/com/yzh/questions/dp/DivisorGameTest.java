@@ -21,6 +21,7 @@ public class DivisorGameTest {
         Assert.assertTrue(new DivisorGame().divisorGame1(n));
         Assert.assertTrue(new DivisorGame().divisorGame2(n));
     }
+
     @Test
     public void test_2() {
         int n = 3;

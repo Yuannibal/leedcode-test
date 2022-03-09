@@ -31,6 +31,7 @@ public class RomanToInt {
             put("CM", 900);
         }
     };
+
     public int romanToInt1(String s) {
         int result = 0;
         int index = 0;
@@ -65,6 +66,7 @@ public class RomanToInt {
             put('M', 1000);
         }
     };
+
     public int romanToInt2(String s) {
         int result = 0;
         for (int i = 0; i < s.length(); i++) {

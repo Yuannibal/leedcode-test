@@ -28,6 +28,7 @@ public class Permute {
         permute1(result, output, new Stack<>(), output.size(), 0);
         return result;
     }
+
     private void permute1(List<List<Integer>> result, Queue<Integer> output, Stack<Integer> input, int len, int n) {
         if (n == len) {
             result.add(new ArrayList<>(input));
@@ -57,6 +58,7 @@ public class Permute {
         permute2(result, output, output.size(), 0);
         return result;
     }
+
     private void permute2(List<List<Integer>> result, List<Integer> output, int len, int n) {
         if (n == len) {
             result.add(new ArrayList<>(output));

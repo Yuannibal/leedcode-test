@@ -17,7 +17,7 @@ public class MiddleNode {
      * 空间复杂度：O(1)，只需要常数空间存放变量和指针。
      */
     public ListNode middleNode1(ListNode head) {
-        ListNode pre =  new ListNode();
+        ListNode pre = new ListNode();
         pre.next = head;
 
         // 第一遍遍历
@@ -46,8 +46,8 @@ public class MiddleNode {
      * 空间复杂度：O(1)，只需要常数空间存放 slow 和 fast 两个指针
      */
     public ListNode middleNode2(ListNode head) {
-        ListNode slow =  head;
-        ListNode fast =  head;
+        ListNode slow = head;
+        ListNode fast = head;
 
         while (null != fast && null != fast.next) {
             slow = slow.next;

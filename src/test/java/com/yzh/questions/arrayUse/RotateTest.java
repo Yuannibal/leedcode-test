@@ -12,22 +12,22 @@ public class RotateTest {
 
     @Test
     public void test_1() {
-        int[][] matrix = {{5,1,9,11},{2,4,8,10},{13,3,6,7},{15,14,12,16}};
+        int[][] matrix = {{5, 1, 9, 11}, {2, 4, 8, 10}, {13, 3, 6, 7}, {15, 14, 12, 16}};
         (new Rotate()).rotate(matrix);
-        Assert.assertArrayEquals(new int[][] {{15,13,2,5},{14,3,4,1},{12,6,8,9},{16,7,10,11}}, matrix);
+        Assert.assertArrayEquals(new int[][]{{15, 13, 2, 5}, {14, 3, 4, 1}, {12, 6, 8, 9}, {16, 7, 10, 11}}, matrix);
     }
 
     @Test
     public void test_2() {
         int[][] matrix = {{1}};
         (new Rotate()).rotate(matrix);
-        Assert.assertArrayEquals(new int[][] {{1}}, matrix);
+        Assert.assertArrayEquals(new int[][]{{1}}, matrix);
     }
 
     @Test
     public void test_3() {
-        int[][] matrix = {{1,2},{3,4}};
+        int[][] matrix = {{1, 2}, {3, 4}};
         (new Rotate()).rotate(matrix);
-        Assert.assertArrayEquals(new int[][] {{3,1},{4,2}}, matrix);
+        Assert.assertArrayEquals(new int[][]{{3, 1}, {4, 2}}, matrix);
     }
 }

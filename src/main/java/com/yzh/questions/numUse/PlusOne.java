@@ -22,7 +22,7 @@ public class PlusOne {
         }
 
         if (flag) {  // 超出范围
-            int[] result =  new int[digits.length + 1];  // 初始化中所有都是0
+            int[] result = new int[digits.length + 1];  // 初始化中所有都是0
             result[0] = 1;
             return result;
         } else {

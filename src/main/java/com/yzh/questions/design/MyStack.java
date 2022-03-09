@@ -12,12 +12,12 @@ public interface MyStack {
     void push(int x);
 
     /**
-     *  移除并返回栈顶元素
+     * 移除并返回栈顶元素
      */
     int pop();
 
     /**
-     *  返回栈顶元素
+     * 返回栈顶元素
      */
     int top();
 

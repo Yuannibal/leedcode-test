@@ -20,11 +20,12 @@ public class IsPowerOfFour {
      */
     public boolean isPowerOfFour21(int n) {
         // mask=(10101010101010101010101010101010)2 = (AAAAAAAA)16
-        return (n > 0) &&((n & (n - 1)) == 0) && ((n & (0xAAAAAAAA)) == 0);
+        return (n > 0) && ((n & (n - 1)) == 0) && ((n & (0xAAAAAAAA)) == 0);
 
     }
+
     public boolean isPowerOfFour22(int n) {
         // mask=(01010101010101010101010101010101)2 = (55555555)16
-        return (n > 0) &&((n & (n - 1)) == 0) && ((n & (0x55555555)) != 0);
+        return (n > 0) && ((n & (n - 1)) == 0) && ((n & (0x55555555)) != 0);
     }
 }

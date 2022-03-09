@@ -17,20 +17,20 @@ public class FindModeTest {
                 new TreeNode(2, new TreeNode(2), null)
         );
 
-        Assert.assertArrayEquals(new int[]{2},  new FindMode().findMode(root));
+        Assert.assertArrayEquals(new int[]{2}, new FindMode().findMode(root));
     }
 
     @Test
     public void test_2() {
         TreeNode root = new TreeNode(2, new TreeNode(1), new TreeNode(2)
         );
-        Assert.assertArrayEquals(new int[]{2},  new FindMode().findMode(root));
+        Assert.assertArrayEquals(new int[]{2}, new FindMode().findMode(root));
     }
 
     @Test
     public void test_3() {
         TreeNode root = new TreeNode(1, new TreeNode(1), new TreeNode(2)
         );
-        Assert.assertArrayEquals(new int[]{1},  new FindMode().findMode(root));
+        Assert.assertArrayEquals(new int[]{1}, new FindMode().findMode(root));
     }
 }

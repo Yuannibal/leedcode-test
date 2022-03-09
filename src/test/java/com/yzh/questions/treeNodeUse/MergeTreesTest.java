@@ -33,7 +33,7 @@ public class MergeTreesTest {
         Assert.assertArrayEquals(
                 preorderTraversal.preOrderTraversal(result).toArray(),
                 preorderTraversal.preOrderTraversal(treeNode).toArray()
-                );
+        );
     }
 
 

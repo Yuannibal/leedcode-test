@@ -44,6 +44,7 @@ public class Flatten {
             flatten2(root, new Stack<>());
         }
     }
+
     public TreeNode flatten2(TreeNode treeNode, Stack<TreeNode> preRightNodeStack) {
         if (treeNode.left == null && treeNode.right == null) {
             if (!preRightNodeStack.empty()) {

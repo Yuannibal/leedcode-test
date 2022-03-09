@@ -13,8 +13,6 @@ public class BinaryTreePaths {
     /**
      * 方法一：深度优先搜索
      * 给定一个二叉树，返回所有从根节点到叶子节点的路径。
-     *
-     *
      */
     public List<String> binaryTreePaths(TreeNode root) {
         List<String> result = new ArrayList<>();

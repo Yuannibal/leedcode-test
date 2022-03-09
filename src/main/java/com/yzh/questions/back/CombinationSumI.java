@@ -25,6 +25,7 @@ public class CombinationSumI {
         combinationSum1(candidates, target, result, deque, 0);
         return result;
     }
+
     private void combinationSum1(int[] candidates, int target,
             List<List<Integer>> result, Deque<Integer> deque, int index) {
         if (index == candidates.length) {
@@ -56,6 +57,7 @@ public class CombinationSumI {
         combinationSum2(candidates, target, result, deque, 0);
         return result;
     }
+
     private void combinationSum2(int[] candidates, int target,
             List<List<Integer>> result, Deque<Integer> deque, int index) {
         if (target == 0) {
