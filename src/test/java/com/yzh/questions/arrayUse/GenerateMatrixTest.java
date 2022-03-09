@@ -18,6 +18,7 @@ public class GenerateMatrixTest {
 
     @Test
     public void test_2() {
+
         int n = 1;
         int[][] result = {{1}};
         Assert.assertArrayEquals(result, new GenerateMatrix().generateMatrix(n));
