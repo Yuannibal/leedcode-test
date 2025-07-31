@@ -5,7 +5,7 @@ package com.yzh.array;
  * 给定一个n个元素有序的(升序)整型数组nums和一个目标值 target,写一个函数搜索nums中的target,如果目标值存在返回下标,否则返回 -1
  * 关键词:有序数组、无重复元素
  */
-public class BinarySearch {
+public class Solution704 {
 
     /**
      * 二分查找
@@ -14,7 +14,7 @@ public class BinarySearch {
      * @param target 目标值
      * @result 下标
      */
-    public int search(int[] nums, int target) {
+    public int binarySearch(int[] nums, int target) {
         int low = 0;
         int high = nums.length - 1;
         while (low <= high) {

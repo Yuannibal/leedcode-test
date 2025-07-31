@@ -12,18 +12,18 @@ import org.powermock.modules.junit4.PowerMockRunner;
  * 给定一个n个元素有序的(升序)整型数组nums和一个目标值 target,写一个函数搜索nums中的target,如果目标值存在返回下标,否则返回-1
  */
 @RunWith(PowerMockRunner.class)
-@PrepareForTest({BinarySearch.class})
-public class BinarySearchTest {
+@PrepareForTest({Solution704.class})
+public class Solution704Test {
 
     @InjectMocks
-    private BinarySearch binarySearch;
+    private Solution704 solution;
 
     @Test
     public void test1() {
         int[] nums = {-1, 0, 3, 5, 9, 12};
         int target = 9;
 
-        int result = binarySearch.search(nums, target);
+        int result = solution.binarySearch(nums, target);
         Assert.assertEquals(4, result);
     }
 
@@ -32,7 +32,7 @@ public class BinarySearchTest {
         int[] nums = {-1, 0, 3, 5, 9, 12};
         int target = 2;
 
-        int result = binarySearch.search(nums, target);
+        int result = solution.binarySearch(nums, target);
         Assert.assertEquals(-1, result);
     }
 }
