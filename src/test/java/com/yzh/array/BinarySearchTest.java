@@ -24,4 +24,13 @@ public class BinarySearchTest {
         int result = binarySearch.search(nums, target);
         Assert.assertEquals(4, result);
     }
+
+    @Test
+    public void test2() {
+        int[] nums = {-1, 0, 3, 5, 9, 12};
+        int target = 2;
+
+        int result = binarySearch.search(nums, target);
+        Assert.assertEquals(-1, result);
+    }
 }
