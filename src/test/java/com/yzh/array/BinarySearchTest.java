@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
+import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
 /**
@@ -11,6 +12,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
  * 给定一个n个元素有序的(升序)整型数组nums和一个目标值 target,写一个函数搜索nums中的target,如果目标值存在返回下标,否则返回-1
  */
 @RunWith(PowerMockRunner.class)
+@PrepareForTest({BinarySearch.class})
 public class BinarySearchTest {
 
     @InjectMocks
