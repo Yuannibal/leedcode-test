@@ -13,13 +13,17 @@ public class Solution26 {
      * @result 新长度
      */
     public int removeDuplicates(int[] nums) {
-        int value = -1;
-        int slow = 0;
-        for (int fast = 0; fast < nums.length; fast++) {
-            if (nums[fast] != value) {
+        if (nums.length == 0) {
+            return 0;
+        } else if (nums.length == 1) {
+            return 1;
+        }
+
+        int slow = 1;
+        for (int fast = 1; fast < nums.length; fast++) {
+            if (nums[fast] != nums[fast - 1]) {
                 nums[slow] = nums[fast];
                 slow++;
-                value = nums[fast];
             }
         }
         return slow;
