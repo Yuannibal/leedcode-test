@@ -8,6 +8,7 @@ public class Solution26 {
 
     /**
      * 删除有序数组中的重复项
+     * 方法:快慢指针--快指针遍历数据,慢指针更改数据
      *
      * @param nums 有序数组
      * @result 新长度

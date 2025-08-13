@@ -9,6 +9,7 @@ public class Solution704 {
 
     /**
      * 二分查找
+     * 方法:左右指针
      *
      * @param nums 升序不重复的数组
      * @param target 目标值

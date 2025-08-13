@@ -8,7 +8,7 @@ public class Solution27 {
 
     /**
      * 移除元素
-     * 思路:快指针遍历元素,慢指针更改替换的元素
+     * 方法:快慢指针--快指针遍历数据,慢指针更改数据
      *
      * @param nums 数组
      * @param val 值

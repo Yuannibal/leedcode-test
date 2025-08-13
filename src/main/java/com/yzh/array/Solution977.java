@@ -8,6 +8,7 @@ public class Solution977 {
 
     /**
      * 有序数组的平方
+     * 方法:左右指针
      *
      * @param nums 升序数组
      * @result 升序平方数组
