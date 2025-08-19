@@ -23,13 +23,10 @@ public class Solution209 {
         for (int fast = 0; fast < nums.length; fast++) {
             sum += nums[fast];
             if (sum >= target) {
-                len = Math.min(fast - slow + 1, len);
                 while (sum >= target) {
+                    len = Math.min(fast - slow + 1, len);
                     sum -= nums[slow];
                     slow++;
-                    if (sum >= target) {
-                        len = Math.min(fast - slow + 1, len);
-                    }
                 }
             }
         }

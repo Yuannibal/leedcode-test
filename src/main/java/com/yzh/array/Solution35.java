@@ -1,25 +1,26 @@
 package com.yzh.array;
 
 /**
- * 704.二分查找
- * 给定一个n个元素有序的(升序)整型数组nums和一个目标值 target,写一个函数搜索nums中的target,如果目标值存在返回下标,否则返回 -1
- * 关键词:有序数组、无重复元素
+ * 35.搜索插入位置
+ * 给定一个排序数组和一个目标值,在数组中找到目标值,并返回其索引;如果目标值不存在于数组中,返回它将会被按顺序插入的位置
  */
-public class Solution704 {
+public class Solution35 {
 
     /**
-     * 二分查找
+     * 搜索插入位置
      * 方法:左右指针
      *
      * @param nums 升序不重复的数组
      * @param target 目标值
      * @result 下标
      */
-    public int binarySearch(int[] nums, int target) {
+    public int searchInsert(int[] nums, int target) {
         int left = 0;
         int right = nums.length - 1;
+
+        int mid = 0;
         while (left <= right) {
-            int mid = (left + right) / 2;
+            mid = (left + right) / 2;
             if (nums[mid] > target) {
                 right = mid - 1;
             } else if (nums[mid] < target) {
@@ -28,6 +29,6 @@ public class Solution704 {
                 return mid;
             }
         }
-        return -1;
+        return mid + 1;
     }
 }
