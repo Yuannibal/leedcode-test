@@ -9,7 +9,8 @@ public class Solution209 {
 
     /**
      * 长度最小的子数组
-     *
+     * 方法:滑动窗口
+     * 技巧:根据当前子序列和大小的情况,不断调节子序列的起始位置
      *
      * @param nums 数组
      * @param target 目标值

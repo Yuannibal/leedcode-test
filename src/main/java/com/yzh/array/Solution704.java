@@ -9,7 +9,7 @@ public class Solution704 {
 
     /**
      * 二分查找
-     * 方法:左右指针
+     * 方法:二分法--将时间复杂度从O(n)变为O(logn)
      *
      * @param nums 升序不重复的数组
      * @param target 目标值
