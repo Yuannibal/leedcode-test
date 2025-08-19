@@ -45,4 +45,13 @@ public class Solution35Test {
         Assert.assertEquals(4, result);
     }
 
+    @Test
+    public void test4() {
+        int[] nums = {1, 3, 5, 6};
+        int target = 0;
+
+        int result = solution.searchInsert(nums, target);
+        Assert.assertEquals(0, result);
+    }
+
 }
