@@ -9,6 +9,7 @@ public class Solution463 {
 
     /**
      * 岛屿的周长
+     * 方法:暴力迭代
      *
      * @param grid 图
      * @result 岛屿周长
