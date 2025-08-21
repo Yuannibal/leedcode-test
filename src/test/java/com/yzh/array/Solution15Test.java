@@ -23,22 +23,36 @@ public class Solution15Test {
     @Test
     public void test1() {
         int[] nums = {-1, 0, 1, 2, -1, -4};
-        List<List<Integer>> result = solution.threeSum1(nums);
-        Assert.assertEquals(2, result.size());
+        List<List<Integer>> result1 = solution.threeSum1(nums);
+        Assert.assertEquals(2, result1.size());
+        List<List<Integer>> result2 = solution.threeSum2(nums);
+        Assert.assertEquals(2, result2.size());
     }
 
     @Test
     public void test2() {
         int[] nums = {0, 1, 1};
-        List<List<Integer>> result = solution.threeSum1(nums);
-        Assert.assertEquals(0, result.size());
+        List<List<Integer>> result1 = solution.threeSum1(nums);
+        Assert.assertEquals(0, result1.size());
+        List<List<Integer>> result2 = solution.threeSum2(nums);
+        Assert.assertEquals(0, result2.size());
     }
 
     @Test
     public void test3() {
         int[] nums = {0, 0, 0};
-        List<List<Integer>> result = solution.threeSum1(nums);
-        Assert.assertEquals(1, result.size());
+        List<List<Integer>> result1 = solution.threeSum1(nums);
+        Assert.assertEquals(1, result1.size());
+        List<List<Integer>> result2 = solution.threeSum2(nums);
+        Assert.assertEquals(1, result2.size());
     }
 
+    @Test
+    public void test4() {
+        int[] nums = {1, -1, -1, 0};
+        List<List<Integer>> result1 = solution.threeSum1(nums);
+        Assert.assertEquals(1, result1.size());
+        List<List<Integer>> result2 = solution.threeSum2(nums);
+        Assert.assertEquals(1, result2.size());
+    }
 }
