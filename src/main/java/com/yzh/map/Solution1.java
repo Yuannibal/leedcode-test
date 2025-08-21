@@ -12,6 +12,7 @@ public class Solution1 {
 
     /**
      * 两数之和
+     * 思路: 每种输入只会对应一个答案--可以用Map
      *
      * @param nums 数组
      * @param target 目标值
