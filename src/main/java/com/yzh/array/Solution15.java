@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 15.三数之和
  * 给你一个整数数组 nums,找出三元组 [nums[i], nums[j], nums[k]]
- * 满足 nums[i] + nums[j] + nums[k] == 0;满足 i != j、i != k 且 j != k;不重复的三元组
+ * 满足 nums[i] + nums[j] + nums[k] == 0; 要求不重复的三元组
  */
 public class Solution15 {
 
@@ -43,8 +43,8 @@ public class Solution15 {
     }
 
     /**
-     * 三数之和--双指正
-     * 思路: a + b = 0; a和b一般在有序中的两侧
+     * 三数之和--双指针
+     * 思路: 双指针可以减少一层循环
      *
      * @param nums 数据
      * @result 结果集合

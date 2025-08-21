@@ -9,9 +9,9 @@ import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
 /**
- * 15. 三数之和
+ * 15.三数之和
  * 给你一个整数数组 nums,找出三元组 [nums[i], nums[j], nums[k]]
- * 满足 nums[i] + nums[j] + nums[k] == 0;满足 i != j、i != k 且 j != k。
+ * 满足 nums[i] + nums[j] + nums[k] == 0; 要求不重复的三元组
  */
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({Solution15.class})
