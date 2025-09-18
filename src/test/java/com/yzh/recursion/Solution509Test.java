@@ -23,21 +23,21 @@ public class Solution509Test {
     @Test
     public void test1() {
         int n = 2;
-        int resul = solution.fib(n);
-        Assert.assertEquals(1, resul);
+        int result = solution.fib(n);
+        Assert.assertEquals(1, result);
     }
 
     @Test
     public void test2() {
         int n = 3;
-        int resul = solution.fib(n);
-        Assert.assertEquals(2, resul);
+        int result = solution.fib(n);
+        Assert.assertEquals(2, result);
     }
 
     @Test
     public void test3() {
         int n = 4;
-        int resul = solution.fib(n);
-        Assert.assertEquals(3, resul);
+        int result = solution.fib(n);
+        Assert.assertEquals(3, result);
     }
 }

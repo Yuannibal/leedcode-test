@@ -9,7 +9,7 @@ package com.yzh.recursion;
 public class Solution509 {
 
     /**
-     * 斐波那契数
+     * 递归法
      *
      * @param n 数据
      * @result 函数结果
