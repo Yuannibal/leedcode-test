@@ -11,6 +11,9 @@ public class Solution455 {
 
     /**
      * 排序 + 双指针 + 贪心
+     * @param g 孩子胃口
+     * @param s 饼干尺寸
+     * @result 最大满足数
      */
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
