@@ -17,6 +17,13 @@ public class Solution20 {
         map.put('}', '{');
     }
 
+    /**
+     *
+     * map+栈
+     *
+     * @param s 字符串
+     * @result 是否有效
+     */
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
         for (char c : s.toCharArray()) {
