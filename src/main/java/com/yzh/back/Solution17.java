@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public class Solution17 {
 
-    private static final Map<Character, List<String>> map = new HashMap<>();
+    private static final Map<Character, List<String>> map = new HashMap<>(8);
 
     static {
         map.put('2', Arrays.asList("a", "b", "c"));
