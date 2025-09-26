@@ -19,7 +19,6 @@ public class Solution209Test {
     @InjectMocks
     private Solution209 solution;
 
-
     @Test
     public void test1() {
         int[] nums = {2, 3, 1, 2, 4, 3};
